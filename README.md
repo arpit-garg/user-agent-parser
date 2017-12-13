@@ -7,12 +7,11 @@ Version is parsed from the string itself since it cannot be classified into diff
 classes as it can be different for a new string. It will be difficult to create classes for versions
 
 ## How to use the code
-python run.py --training path_of_training_data.txt --test path_of_test_data.txt --prediction-results path_of_output_data.txt
 
 Example -
-# python data_coding_challenge.py --training train.txt --test test.txt --prediction-results prediction.txt
+`` python ua_parser_ml.py --training train.txt --test test.txt --prediction-results prediction.txt ``
 
-## Modules-
+## Modules
 
 -training() - training the classifier on training data
     arguments - training data (labeled tab separated file of user agent string, family and version)
@@ -26,9 +25,9 @@ Example -
 -predict_versions() - parser to find major versions for each family
     arguments - user agent string from test data, predicted family of test data
 
--module of each family for returning version for each case
+-functions for each family for returning version for each case
 
 ## Dependencies
 -sklearn - classifier, feature engineering
--argparse - for creating argument parser for running python file
+
 -numpy - for creating large vectors for big computations
